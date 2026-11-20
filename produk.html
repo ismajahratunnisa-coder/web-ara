@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <title>Produk - Ara Boutique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+
+  <style>
+    body {
+      background-color: #fff8f7;
+      font-family: Arial, sans-serif;
+    }
+
+
+    .sidebar {
+      width: 25%;
+      background-color: #f3dfe0;
+    }
+
+    .sidebar h3 {
+      color: #a66f7a;
+      font-weight: bold;
+    }
+
+    .sidebar a {
+      color: #654c52;
+      padding: 15px;
+    }
+
+    .sidebar a:hover {
+      background-color: #e8c5cc !important;
+    }
+
+
+    .content {
+      margin-left: 25%;
+    }
+
+    /* HEADER */
+    .header {
+      background-color: #b77c89;
+      color: white;
+      padding: 15px;
+    }
+
+    PRODUK .produk {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 25px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
+      box-shadow: 0 3px 10px #00000015;
+    }
+
+    .card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      color: #a66f7a;
+    }
+
+    .harga {
+      color: #b77c89;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .btn {
+      background-color: #b77c89;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #95616d;
+    }
+
+    @media(max-width:800px) {
+      .produk {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width:600px) {
+      .sidebar {
+        width: 100%;
+        position: relative;
+      }
+
+      .content {
+        margin-left: 0;
+      }
+
+      .produk {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  SIDEBAR
+  <div class="w3-sidebar w3-bar-block sidebar">
+
+    <h3 class="w3-bar-item">Ara Boutique</h3>
+
+    <a href="beranda.html" class="w3-bar-item w3-button">
+      🏠 Beranda
+    </a>
+
+    <a href="produk.html" class="w3-bar-item w3-button">
+      👗 Produk
+    </a>
+
+    <a href="tentang.html" class="w3-bar-item w3-button">
+      🌸 Tentang
+    </a>
+
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="content">
+
+    <!-- HEADER -->
+    <div class="w3-container header">
+      <h1>Koleksi Produk Ara Boutique</h1>
+    </div>
+
+    <div class="w3-container">
+      <h2 style="color:#a66f7a">
+        Fashion Collection
+      </h2>
+
+      <p>
+        Temukan berbagai koleksi busana wanita
+        yang cantik, elegan, dan modern.
+      </p>
+    </div>
+
+    DAFTAR PRODUK
+    <div class="produk">
+
+      <div class="card">
+        <img src="WhatsApp Image 2026-11-14 at 13.32.29 (2).jpeg" alt="Dress">
+        <h3>Dress Wanita</h3>
+        <p>Dress elegan untuk berbagai acara.</p>
+        <p class="harga">Rp150.000</p>
+        <button class="btn">Lihat Produk</button>
+      </div>
+
+      <div class="card">
+        <img src="Blus Vintage Romantis di Butik Pastel.png" alt="Blouse">
+        <h3>Blouse Wanita</h3>
+        <p>Atasan modern dan nyaman.</p>
+        <p class="harga">Rp95.000</p>
+        <button class="btn">Lihat Produk</button>
+      </div>
+
+      <div class="card">
+        <img src="WhatsApp Image 2026-11-14 at 13.32.29 (1).jpeg" alt="Rok">
+        <h3>Rok Wanita</h3>
+        <p>Rok cantik dengan model terbaru.</p>
+        <p class="harga">Rp100.000</p>
+        <button class="btn">Lihat Produk</button>
+      </div>
+
+      <div class="card">
+        <img src="Pajangan Cardigan Pastel di Ara Boutique.png" alt="Cardigan">
+        <h3>Cardigan</h3>
+        <p>Cardigan lembut dan fashionable.</p>
+        <p class="harga">Rp135.000</p>
+        <button class="btn">Lihat Produk</button>
+      </div>
+
+      <div class="card">
+        <img src="WhatsApp Image 2026-11-14 at 13.32.29.jpeg" alt="Handbag">
+        <h3>Handbag</h3>
+        <p>Tas wanita dengan desain elegan.</p>
+        <p class="harga">Rp110.000</p>
+        <button class="btn">Lihat Produk</button>
+      </div>
+
+      <div class="card">
+        <img src="Etalase Hijab Pastel Ara Boutique.png" alt="Hijab">
+        <h3>Hijab</h3>
+        <p>Hijab modern berbagai warna.</p>
+        <p class="harga">Rp45.000</p>
+        <button class="btn">Lihat Produk</button>
+      </div>
+
+    </div>
+
+    <div class="w3-container w3-center">
+      <p>© 2026 Ara Boutique. All Rights Reserved.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
